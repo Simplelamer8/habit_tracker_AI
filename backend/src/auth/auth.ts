@@ -66,7 +66,7 @@ export const loginUser = async (req: Request, res: Response) => {
 
         await pool.query("INSERT INTO refresh_tokens (token, user_id) VALUES ($1, $2)", [refreshToken, user.user_id]);
 
-        res.status(200).json({message: "Login successful", email: user.email, accessToken, refreshToken});
+        res.status(200).json({message: "Login successful", email: user.email, accessToken, refreshToken, user_id: user.user_id});
     }
     catch(error)
     {

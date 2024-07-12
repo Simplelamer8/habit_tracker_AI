@@ -19,9 +19,8 @@ export default function DateHeader() {
   ]
 
   return (
-    <div>
-        Day #
-        <p>{date.getDate()}</p>
+    <div className='flex justify-around'>
+        <p>Day #{date.getDate()}</p>
         <p>{months[date.getMonth()]}</p>
         <p>{date.getFullYear()}</p>
     </div>
