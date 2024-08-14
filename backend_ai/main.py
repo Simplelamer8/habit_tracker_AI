@@ -672,7 +672,7 @@ class TextEmbedding(Base):
     embedding = Column(Vector(N_DIM))
 
 # Connect to PostgreSQL
-engine = create_engine('postgresql://postgres:qwerty@localhost:5432/vector_db')
+engine = create_engine('postgresql://postgres_user:habiPmmnpAf8mPWrrfacbSvo8MJzX9RB@dpg-cqqf2hogph6c738ak080-a.frankfurt-postgres.render.com/habit_tracker_ai')
 Base.metadata.create_all(engine)
 
 # Create a session
