@@ -118,11 +118,11 @@ msg1 = {
 
 
 db_config = {
-    'dbname': 'habit_tracker_ai',
-    'user': 'postgres',
-    'password': 'qwerty',
-    'host': 'localhost',
-    'port': '5432'
+    'dbname': os.getenv("DB"),
+    'user': os.getenv("DB_USER_NAME"),
+    'password': os.getenv("DB_PASSWORD"),
+    'host': os.getenv("DB_HOST"),
+    'port': os.getenv("DB_PORT")
 }
 
 class Habit(BaseModel):
