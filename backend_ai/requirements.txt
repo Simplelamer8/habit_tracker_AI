@@ -32,6 +32,7 @@ numpy==1.26.4
 openai==1.40.6
 orjson==3.10.7
 packaging==24.1
+pgvector==0.3.2
 psycopg2-binary==2.9.9
 pydantic==2.8.2
 pydantic_core==2.20.1
